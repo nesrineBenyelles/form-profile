@@ -137,35 +137,35 @@ axios.post(`http://localhost:8081/Formulaire/${code_barrau}`, formData, {
   return (
     <div className='formAvocat'>
         <NavCompte/>
-    <form onSubmit={handleSubmit} encType='multipart/form-data'>
-      <label>
+    <form className='form-avocat' onSubmit={handleSubmit} encType='multipart/form-data'>
+      <label className='label-form'>
         Nom:</label>
-        <input type="text" value={name} onChange={e => {setName(e.target.value);}} />
+        <input className='inputcss'type="text" value={name} onChange={e => {setName(e.target.value);}} />
       
-      <label>
+      <label className='label-form'>
         Prénom:</label>
-        <input type="text" value={prenom} onChange={e => setPrenom(e.target.value)} />
+        <input className='inputcss'type="text" value={prenom} onChange={e => setPrenom(e.target.value)} />
       
       {/*<label>
       Adresse de votre cabinet:</label>
         <input type="text" value={adressecabinet} onChange={e => setAdresseC(e.target.value)} />
   */}
       
-      <label>
+      <label className='label-form'>
        Ville:</label>
-        <select onChange={handleWilaya}>
+        <select className='select-form' onChange={handleWilaya}>
       {options.map((option) => (
         <option key={option.value} value={option.name} >{option.value} : {option.name}</option>
       ))}
       </select>
-      <label>
+      <label className='label-form'>
       Téléphone:</label>
-        <input type="text" value={telephone} onChange={e => setTelephone(e.target.value)} />
+        <input className='inputcss'type="text" value={telephone} onChange={e => setTelephone(e.target.value)} />
       
-     <label>
+     
      <div>
-        <label htmlFor="specialty">Spécialité :</label>
-        <select id="specialty" value={specialite} onChange={handleSpecialiteChange}>
+        <label className='label-form' htmlFor="specialty">Spécialité :</label>
+        <select className='select-form' id="specialty" value={specialite} onChange={handleSpecialiteChange}>
           <option value="">Sélectionner une spécialité</option>
           <option value="droit de famille">Droit de famille</option>
           <option value="droit pénal">Droit pénal</option>
@@ -175,23 +175,23 @@ axios.post(`http://localhost:8081/Formulaire/${code_barrau}`, formData, {
           {/* Ajoutez d'autres options selon les spécialités disponibles */}
         </select>
       </div>
-
+      <label className='label-form'>
       Site web:</label>
-        <input type="text" value={siteweb} onChange={e => setSiteWeb(e.target.value)} />
+        <input className='inputcss' type="text" value={siteweb} onChange={e => setSiteWeb(e.target.value)} />
 
-          <label >Type:</label>
-            <input className='checkbox-type' type='checkbox' value='national' name='type' checked={nationalChecked} onChange={handelType}/><p style={{display: 'inline-block', marginLeft: '5px'}}>National</p>
-          <input className='checkbox-type' type='checkbox' value='international' name='type' checked={internationalChecked} onChange={handelType}/><p style={{display: 'inline-block', marginLeft: '5px'}}>International</p> 
+          <label className='label-form' >Type:</label>
+            <input className='checkbox-type' type='checkbox' value='national' name='type' checked={nationalChecked} onChange={handelType}/><p className='nat-internat' style={{display: 'inline-block', marginLeft: '5px'}}>National</p>
+          <input className='checkbox-type' type='checkbox' value='international' name='type' checked={internationalChecked} onChange={handelType}/><p className='nat-internat' style={{display: 'inline-block', marginLeft: '5px'}}>International</p> 
 
-       <label>
+       <label className='label-form'>
       Description:</label>
-        <textarea value={description} onChange={e => setDescription(e.target.value)} />
+        <textarea className='description' value={description} onChange={e => setDescription(e.target.value)} />
 
         <div className="image-upload">
-        <label >Importer une photo</label>
-          <input type="file" name='image' onChange={handlePdpChange} />
+        <label className='label-form' >Importer une photo</label>
+          <input className='inputcss'type="file" name='image' onChange={handlePdpChange} />
     </div>
-      <button type="submit">Envoyer</button>
+      <button className='bouton-envoyer' type="submit">Envoyer</button>
 
      </form></div>
 
