@@ -1,0 +1,101 @@
+
+/* Styles pour le conteneur principal */
+
+.profile-container {
+  max-width: 80%;
+  margin: 0 auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+
+
+/* Styles pour l'image de profil */
+.pdp {
+  display: block;
+  margin: 0 auto;
+  width: 200x;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Styles pour la section nom et prénom */
+.name-section {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Styles pour le titre du profil */
+.name-section h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #000000;
+  font-weight:normal;
+  margin-top: 0;
+
+
+}
+
+.information{
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Deux colonnes de largeur égale */
+  grid-gap: 10px; /* Espace entre les colonnes */}
+/* Styles pour la description du profil */
+.info-container{
+  grid-column: 1; /* Première colonne */
+  margin-top: 1%;
+}
+.profile-description h1{
+  font-weight:normal;
+  /*fait un trait fin*/
+  border-bottom: 1px solid #adb0bb;
+  margin-bottom: 2%;
+  padding-bottom: 1%;
+  max-width: 50%;
+  color: #272f47;
+}
+.profile-description {
+  grid-column: 2; /* Première colonne */
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #626060;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+/* Styles pour les autres informations */
+.additional-info {
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: #626060;
+  margin-bottom: 1%;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+#Info{
+  font-size: 2.5rem;
+  font-weight:normal;
+  /*fait un trait fin*/
+  border-bottom: 1px solid #adb0bb;
+  margin-bottom: 2%;
+  padding-bottom: 1%;
+  max-width: 50%;
+  color: #272f47;
+}
+
+/* Styles pour le fond de la page */
+body {
+  background-color: #3A425C;
+}
+
